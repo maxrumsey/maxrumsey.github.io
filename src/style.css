@@ -1,13 +1,16 @@
 body {
   margin: 0;
 }
+footer {
+  position: relative;
+  padding: 50px 50px;
+}
 .pages {
   height: calc(99vh);
   position: relative;
 }
 .page {
-  height: calc(105vh);
-  position: relative;
+  padding: 30px;
 }
 .child {
   position: absolute;
@@ -20,34 +23,40 @@ body {
   padding: 30px;
   border-radius: 5px;
 }
-#header {
-  background-color: white;
-}
 .purp {
   background-color: rgba(154, 78, 174, 0.5);
 }
-#name {
-  font-family: 'Cousine', monospace;
-  text-align: center;
-  font-size: 40px;
-  color: rgba(255, 255, 255, 0.8);
-}
-#logo {
-  margin-left: auto;
-  margin-right: auto;
+.logo {
+  margin: auto;
+  padding-top: 30px;
   display: block;
   width: fit-content;
-  transition: transform .2s;
-}
-#logo:hover {
-  transform: scale(0.8);
+  transition: .2s;
 }
 ::-webkit-scrollbar {
   display: none;
 }
-footer {
-  position: relative;
-  padding: 50px 50px;
+.link {
+  text-decoration: none;
+  color: white;
+  margin: 50px 0;
+  background-color: rgba(154, 78, 174, 0.3);
+  border-radius: 10px;
+}
+.maintext {
+  font-family: "Muli";
+}
+.break {
+  border-bottom: 2px solid white;
+}
+.lead {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 72px;
+  color: white;
+}
+#header {
+  background-color: white;
 }
 #bottom {
   margin: 0;
@@ -56,30 +65,21 @@ footer {
   color: grey;
 }
 #main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(60vw);
-  height: calc(80vh);
+  display: block;
+  margin: 0 auto;
+  width: 520px;
+  height: 500px;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
   background-color: rgba(154, 78, 174, 0.5);
 }
-.a {
-  text-decoration: none;
-  color: white;
-  margin: 50px 0;
+#name {
+  font-family: 'Cousine', monospace;
+  text-align: center;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.8);
 }
-.maintext {
-  font-family: "Muli";
-}
-#break {
-  border-bottom: 1px solid grey;
-}
-.lead {
-  font-family: "Montserrat";
-  font-weight: bolder;
-  font-size: 72px;
+.logo:hover {
+  transform: scale(0.8);
 }
