@@ -1,1 +1,4 @@
-Sitemap: http://maxrumsey.xyz/sitemap.xml
+Sitemap: https://maxrumsey.xyz/sitemap.xml
+
+User-Agent: *
+Allow: /
