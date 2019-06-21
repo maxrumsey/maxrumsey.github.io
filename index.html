@@ -1,38 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="src/style.css" rel="stylesheet">
+  <script type="text/javascript" src='src/main.js'></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <meta name="google-site-verification" content="XD1u7ROWjM2Zjl5-FoAEH91dhZrs3pe4uBCX4zBQtrM" />
-  <title>Web Developer - Max Rumsey - maxrumsey.xyz</title>
-  <link href="https://fonts.googleapis.com/css?family=Bitter|Muli|Cousine|Montserrat" rel="stylesheet">
-  <link href="src/style.css" rel="stylesheet">
-  <meta name="description" content="My name is Max Rumsey. I'm a Back End Web Developer from Perth, Western Australia.">
-  <meta name="keywords" content="max, rumsey, max rumsey, maxim, developer, web, web developer">
+  <title>Max Rumsey</title>
+  <meta name="description" content="My name is Max Rumsey. I'm a Web Developer and Student from Perth, Western Australia.">
+  <meta name="keywords" content="max, rumsey, max rumsey, developer, web, web developer">
 </head>
 <body>
-<div class="pages" id="header">
-  <div class="child">
-    <h1 id="name">Max Rumsey</h1>
-    <a class="logo" href="https://github.com/maxrumsey"><img alt="Max Rumsey's Github Account" src="src/gitlogo.png"></a>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Max Rumsey</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/hookcord">Hookcord</a>
+    </li>
+  </ul>
+  <div id='header-Img'>
+    <h1 class='header-Txt'>Max Rumsey</h1>
+    <div></div>
+    <h2 class='header-Txt'>Web Developer</h2>
   </div>
-</div>
-
-<div class="page purp">
-  <div id="main" class="maintext">
-    <h2 class="lead">Back End Developer</h2>
-    <div class="break"></div>
-    <a class="link" href="https://github.com/maxrumsey?tab=repositories"><h2 class="link">My Projects</h2></a>
-    <div class="break"></div>
-    <a class="link" href="contact.html"><h2 class="link">Contact Me</h2></a>
+  <div>
+    <h3 class='sectionHeader'>Projects</h3>
+    <div id='projectBoxs' class='row'>
+      <div class='project col-lg-6'>
+        <div class='project-left'>
+          <h4>Transperth API</h4>
+          <p>The Transperth API is website and npm package that allows progmattic access to query Transperth's services.</p>
+        </div>
+        <div class='project-right'>
+          <a href='https://transperth.maxrumsey.xyz/'>API Website</a>
+          <a href='https://github.com/maxrumsey/transperthapisite'>Website's GitHub</a>
+          <a href='https://github.com/maxrumsey/transperthAPI'>npm Package GitHub</a>
+          <a href='https://www.npmjs.com/package/transperthapi'>npm</a>
+        </div>
+      </div>
+      <div class='project col-lg-6'>
+        <div class='project-left'>
+          <h4>Hookcord</h4>
+          <p>Hookcord is a wrapper for sending WebHooks to the Discord chat messaging platform. It allows you to import WebHook objects from Discord.JS as well as use plain JSON as the WebHook body.</p>
+        </div>
+        <div class='project-right'>
+          <a href='https://www.npmjs.com/package/hookcord'>npm</a>
+          <a href='https://github.com/maxrumsey/hookcord'>GitHub</a>
+          <a href='https://maxrumsey.xyz/hookcord/?api'>Documentation</a>
+        </div>
+      </div>
+    </div>
+    <div id='projectBoxs' class='row'>
+      <div class='project col-lg-6'>
+        <div class='project-left'>
+          <h4>Pen9</h4>
+          <p>Pen9 is a completely online text editor, somewhat like Google Docs.</p>
+        </div>
+        <div class='project-right'>
+          <a href='https://github.com/maxrumsey/pen9'>GitHub</a>
+        </div>
+      </div>
+      <div class='project col-lg-6'>
+        <div class='project-left'>
+          <h4>Passphrase</h4>
+          <p>Passphrase is an encrypted password and credential manager, designed for developers and DevOps Engineers.</p>
+        </div>
+        <div class='project-right'>
+          <a href='https://github.com/maxrumsey/passphrase'>GitHub</a>
+          <a href='vps.maxrumsey.xyz:8080'>Website</a>
+        </div>
+      </div>
+    </div>
+    <div id='projectBoxs' class='row'>
+      <div class='project col-lg-6'>
+        <div class='project-left'>
+          <h4>oohaY</h4>
+          <p>oohaY is a web crawler and simple search engine.</p>
+        </div>
+        <div class='project-right'>
+          <a href='https://github.com/maxrumsey/oohaY'>GitHub</a>
+        </div>
+      </div>
+      <div class='project col-lg-6'>
+        <div class='project-left'>
+          <h4>SQLAnywhere DB Searcher</h4>
+          <p>This is a Command-Line program that allows a table of a SQLAnywhere Database to be searched for a specific keyword in a column.</p>
+        </div>
+        <div class='project-right'>
+          <a href='https://github.com/maxrumsey/sqlanywhereDBSearch'>GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div id='projectBoxs' class='row'>
+      <div class='project col-lg-6'>
+        <div class='project-left'>
+          <h4>Raspi-imagepaste</h4>
+          <p>This is a web application that functions as an image host and pastebin. Designed to run on a RaspberryPi.</p>
+        </div>
+        <div class='project-right'>
+          <a href='https://github.com/maxrumsey/raspi-imagepaste'>GitHub</a>
+        </div>
+      </div>
+      <div class='project col-lg-6'>
+        <div class='project-left'>
+          <h4>ChooseYourOwnAdventure</h4>
+          <p>This is a school project I made which is a choose-your-own-adventure kind of game.</p>
+        </div>
+        <div class='project-right'>
+          <a href='https://github.com/maxrumsey/chooseyouradventure'>GitHub</a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<footer>
-  <p id="bottom">(c) 2018 Max Rumsey</p>
-  <div></div>
-  <p id="bottom">Made From Scratch</p>
-</footer>
+  <div class='bar-Top'>
+    <div class='info-Col' id='Col-about'>
+      <h3 class='sectionHeader'>About</h3>
+      <p>My name is Max Rumsey and I'm a web-developer from Perth, Western Australia. I enjoy building the back-end of websites, and maintaining my two NPM projects. By day, I am a student.</p>
+    </div>
+    <div class='info-Col' id='Col-contact'>
+      <h3 class='sectionHeader'>Contact</h3>
+      <h4><a href='https://github.com/maxrumsey'>GitHub</a></h4>
+      <h4><a href='https://www.npmjs.com/~maxrumsey'>NPM</a></h4>
+      <p><b>Email:</b> max@maxrumsey.xyz</p>
+    </div>
+  </div>
+  <br /><br /><br />  <br /><br /><br /><br /><br /><br />  <br /><br /><br />
+  <div id='footer' class='bar-Top'>
+    <p id='footer-left'>Designed by Max Rumsey - <a href='https://github.com/maxrumsey/maxrumsey.github.io'>Source</a></p>
+    <p id='footer-right'>Created with: <a href='https://getbootstrap.com/'>Bootstrap</a>, <a href='https://pages.github.com/'>GitHub Pages</a> and <a href='https://jquery.com/'>JQuery</a>. <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@pawel_czerwinski?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Paweł Czerwiński"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Paweł Czerwiński</span></a></p>
+  </div>
 </body>
 </html>

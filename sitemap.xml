@@ -4,8 +4,4 @@
     <loc>https://maxrumsey.xyz/</loc>
     <priority>1</priority>
   </url>
-  <url>
-    <loc>https://maxrumsey.xyz/contact.html</loc>
-    <priority>0.8</priority>
-  </url>
 </urlset>
